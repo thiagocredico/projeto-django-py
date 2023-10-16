@@ -12,6 +12,7 @@
       <td>{{ usuario.nome }}</td>
       <td>{{ usuario.idade }}</td>
       <td><a href="{% url 'editar' usuario.id_usuario %}">Editar</a></td>
+      <td><a href="{% url 'deletar' usuario.id_usuario %}">Deletar</a></td>
     </tr>
     {% endfor %}
   </table>

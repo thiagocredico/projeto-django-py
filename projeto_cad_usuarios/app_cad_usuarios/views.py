@@ -35,3 +35,9 @@ def update(request, id):
     usuario.idade = nova_idade
     usuario.save()
     return redirect("/usuarios/")
+
+
+def deletar(request, id):
+    usuario = Usuario.objects.get(id_usuario=id)
+    usuario.delete()
+    return redirect("/usuarios/")
