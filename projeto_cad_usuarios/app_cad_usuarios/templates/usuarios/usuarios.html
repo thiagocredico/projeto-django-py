@@ -11,6 +11,7 @@
       <td>{{ usuario.id_usuario }}</td>
       <td>{{ usuario.nome }}</td>
       <td>{{ usuario.idade }}</td>
+      <td><a href="{% url 'editar' usuario.id_usuario %}">Editar</a></td>
     </tr>
     {% endfor %}
   </table>

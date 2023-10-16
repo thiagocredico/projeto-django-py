@@ -1,0 +1,31 @@
+{% extends 'usuarios/base.html' %} {% block content %}
+
+
+<form
+action="{% url 'update' usuario.id_usuario %}"
+method="post"
+class="form-control-sm"
+>
+{% csrf_token %}
+  <h1 class="text-4xl m-10 uppercase font-extrabold">Edição de usuários</h1>
+  <div class="join">
+    <input
+      type="text"
+      name="nome"
+      class="input input-bordered join-item form-control-sm"
+      placeholder="Nome"
+      value="{{usuario.nome}}"
+    />
+    <input
+      type="text"
+      name="idade"
+      class="input input-bordered join-item form-control-sm"
+      placeholder="Idade"
+      value="{{usuario.idade}}"
+    />
+    <button type="submit" class="btn join-item rounded-r-full form-control-sm">
+      Atualizar
+    </button>
+  </div>
+</form>
+{% endblock %}
