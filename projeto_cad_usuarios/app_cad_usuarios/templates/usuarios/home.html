@@ -16,12 +16,17 @@
       <h1 class="btn btn-ghost normal-case text-xl">
         Cadastre-me com django + python
       </h1>
-    </div>
-    <h1 class="text-4xl m-10 uppercase font-extrabold">Cadastro de usuários</h1>
-    <div class="join">
-      <input class="input input-bordered join-item" placeholder="Nome" />
-      <input class="input input-bordered join-item" placeholder="Idade" />
-      <button class="btn join-item rounded-r-full">Cadastrar</button>
-    </div>
+    </div> 
+    <form action="{% url 'listagem_usuarios' %}" method="post" class="form-control-sm">
+        {% csrf_token %}
+      <h1 class="text-4xl m-10 uppercase font-extrabold">
+        Cadastro de usuários
+      </h1>
+      <div class="join">
+        <input type="text" name="nome" class="input input-bordered join-item form-control-sm" placeholder="Nome" />
+        <input type="text" name="idade" class="input input-bordered join-item form-control-sm" placeholder="Idade" />
+        <button type="submit" class="btn join-item rounded-r-full form-control-sm">Enviar</button>
+      </div>
+    </form>
   </body>
 </html>
