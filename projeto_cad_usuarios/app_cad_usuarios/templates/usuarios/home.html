@@ -1,13 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="emerald">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Cadastro de Usuários</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Cadastre-me!</h1>
+  <body class="flex flex-col items-center">
+    <div class="navbar bg-base-200">
+      <h1 class="btn btn-ghost normal-case text-xl">
+        Cadastre-me com django + python
+      </h1>
+    </div>
+    <h1 class="text-4xl m-10 uppercase font-extrabold">Cadastro de usuários</h1>
+    <div class="join">
+      <input class="input input-bordered join-item" placeholder="Nome" />
+      <input class="input input-bordered join-item" placeholder="Idade" />
+      <button class="btn join-item rounded-r-full">Cadastrar</button>
+    </div>
   </body>
 </html>
