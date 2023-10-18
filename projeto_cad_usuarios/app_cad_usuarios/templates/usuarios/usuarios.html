@@ -11,8 +11,8 @@
       <td>{{ usuario.id_usuario }}</td>
       <td>{{ usuario.nome }}</td>
       <td>{{ usuario.idade }}</td>
-      <td><a class="btn btn-warning" href="{% url 'editar' usuario.id_usuario %}">Editar</a></td>
-      <td><a class="btn btn-error" href="{% url 'deletar' usuario.id_usuario %}">Deletar</a></td>
+      <td><a class="btn btn-sm btn-warning" href="{% url 'editar' usuario.id_usuario %}">Edit</a></td>
+      <td><a class="btn btn-sm btn-error" href="{% url 'deletar' usuario.id_usuario %}">Del</a></td>
     </tr>
     {% endfor %}
   </table>

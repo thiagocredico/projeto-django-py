@@ -7,11 +7,11 @@
   {% csrf_token %}
   <section class="w-screen flex flex-col p-5">
     <h1 class="text-4xl my-10 uppercase font-extrabold w-screen items-center text-center p-5">Cadastro de usuários</h1>
-    <div class="join join-vertical">
+    <div class="join join-vertical md:join-horizontal">
       <input
         type="text"
         name="nome"
-        class="input input-bordered join-item join-vertical form-control-sm"
+        class="input input-bordered join-item form-control-sm"
         placeholder="Nome"
       />
       <input
