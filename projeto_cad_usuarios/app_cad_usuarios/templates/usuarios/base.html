@@ -9,10 +9,10 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Cadastro de Usuários</title>
+    <title class="">Cadastro de Usuários</title>
   </head>
-  <body class="flex flex-col items-center">
-    <div class="navbar bg-base-200">
+  <body class="flex flex-col items-center p-5">
+    <div class="navbar bg-base-200 flex items-center">
       <a href="/">
         <h1 class="btn btn-ghost normal-case text-xl">
           Cadastre-me com django + python
@@ -20,5 +20,6 @@
       </a>
     </div>
     {% block content %} {% endblock %}
+    <footer class="btm-nav"> Feito com ❤️ - Thiago Banfi Credico 2023 </footer>
   </body>
 </html>
