@@ -2,25 +2,25 @@
 <form
   action="{% url 'listagem_usuarios' %}"
   method="post"
-  class="form-control-sm"
+  class="form-control-sm w-full"
 >
   {% csrf_token %}
-  <section class="w-screen flex flex-col p-5">
-    <h1 class="text-4xl my-10 uppercase font-extrabold w-screen items-center text-center p-5">Cadastro de usuários</h1>
-    <div class="join join-vertical md:join-horizontal">
+  <section class="w-full flex flex-col p-5 items-center flex-auto">
+    <h1 class="text-4xl my-10 uppercase font-extrabold w-full items-center text-center p-5">Cadastro de usuários</h1>
+    <div class="flex join join-vertical w-min items-center">
       <input
         type="text"
         name="nome"
-        class="input input-bordered join-item form-control-sm"
+        class="input input-bordered input-info join-item form-control-sm"
         placeholder="Nome"
       />
       <input
         type="text"
         name="idade"
-        class="input input-bordered join-item form-control-sm"
+        class="input input-bordered input-info join-item form-control-sm"
         placeholder="Idade"
       />
-      <button type="submit" class="btn join-item rounded-r-full form-control-sm">
+      <button type="submit" class="btn btn-info join-item rounded-r-full form-control-sm w-full">
         Enviar
       </button>
     </div>

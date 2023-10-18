@@ -12,12 +12,27 @@
     <title class="">Cadastro de Usuários</title>
   </head>
   <body class="flex flex-col items-center p-5">
-    <div class="navbar bg-base-200 flex items-center">
+    <div class="navbar bg-base-200 flex items-center justify-between">
       <a href="/">
         <h1 class="btn btn-ghost normal-case text-xl">
-          Cadastre-me com django + python
+          Cadastre-me!
         </h1>
       </a>
+      <div class="flex-none">
+        <ul class="menu menu-horizontal px-1">
+          <li>
+            <details>
+              <summary>
+                Menu
+              </summary>
+              <ul class="p-2 bg-base-100">
+                <li><a href="/">Cadastro</a></li>
+                <li><a href="/usuarios">Usuários</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </div>
     </div>
     {% block content %} {% endblock %}
     <footer class="btm-nav"> Feito com ❤️ - Thiago Banfi Credico 2023 </footer>
